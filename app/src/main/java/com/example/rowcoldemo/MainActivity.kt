@@ -61,7 +61,9 @@ fun MainScreen(modifier: Modifier = Modifier) {
             ),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Column {
+            Column(
+                horizontalAlignment = Alignment.End
+            ) {
                 TextCell("1")
                 TextCell("2")
                 TextCell("3")
