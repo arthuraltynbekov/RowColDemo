@@ -53,41 +53,22 @@ fun TextCell(text: String, modifier: Modifier = Modifier) {
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
-    Column(modifier) {
-        Row(
-            modifier.size(
-                width = 400.dp,
-                height = 200.dp
-            ),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceAround
-        ) {
-            Column(
-                horizontalAlignment = Alignment.End
-            ) {
-                TextCell("1")
-                TextCell("2")
-                TextCell("3")
-            }
-            Column {
-                TextCell("4")
-                TextCell("5")
-                TextCell("6")
-            }
-            Column {
-                TextCell("7")
-                TextCell("8")
-            }
-        }
+    Row {
+        Text(
+            text = "Large Text",
+            Modifier.alignByBaseline(),
+            fontSize = 40.sp,
+            fontWeight = FontWeight.Bold
+        )
 
-        Row {
-            TextCell("1", Modifier.weight(weight = 0.2f, fill = true))
-            TextCell("2", Modifier.weight(weight = 0.4f, fill = true))
-            TextCell("3", Modifier.weight(weight = 0.3f, fill = true))
-        }
+        Text(
+            text = "Small Text",
+            Modifier.alignByBaseline(),
+            fontSize = 32.sp,
+            fontWeight = FontWeight.Bold
+        )
     }
 }
-
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
