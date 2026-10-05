@@ -1,6 +1,7 @@
 package com.example.rowcoldemo
 import androidx.compose.ui.Alignment
 import android.os.Bundle
+import androidx.compose.ui.layout.FirstBaseline
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -56,7 +57,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
     Row {
         Text(
             text = "Large Text",
-            Modifier.alignByBaseline(),
+            Modifier.alignBy(FirstBaseline),
             fontSize = 40.sp,
             fontWeight = FontWeight.Bold
         )
