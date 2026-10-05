@@ -1,6 +1,7 @@
 package com.example.rowcoldemo
 import androidx.compose.ui.Alignment
 import android.os.Bundle
+import androidx.compose.ui.layout.LastBaseline
 import androidx.compose.ui.layout.FirstBaseline
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -56,8 +57,8 @@ fun TextCell(text: String, modifier: Modifier = Modifier) {
 fun MainScreen(modifier: Modifier = Modifier) {
     Row {
         Text(
-            text = "Large Text",
-            Modifier.alignBy(FirstBaseline),
+            text = "Large Text\n\nMore Text",
+            Modifier.alignBy(LastBaseline),
             fontSize = 40.sp,
             fontWeight = FontWeight.Bold
         )
@@ -70,6 +71,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
         )
     }
 }
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
