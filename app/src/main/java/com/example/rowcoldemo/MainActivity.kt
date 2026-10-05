@@ -81,12 +81,9 @@ fun MainScreen(modifier: Modifier = Modifier) {
         }
 
         Row {
-            TextCell(
-                "9",
-                Modifier.align(Alignment.Top)
-            )
-            TextCell("10", Modifier.align(Alignment.CenterVertically))
-            TextCell("11", Modifier.align(Alignment.Bottom))
+            TextCell("1", Modifier.weight(weight = 0.2f, fill = true))
+            TextCell("2", Modifier.weight(weight = 0.4f, fill = true))
+            TextCell("3", Modifier.weight(weight = 0.3f, fill = true))
         }
     }
 }
