@@ -59,7 +59,8 @@ fun MainScreen(modifier: Modifier = Modifier) {
                 width = 400.dp,
                 height = 200.dp
             ),
-            verticalAlignment = Alignment.CenterVertically
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.End
         ) {
             Column(
                 horizontalAlignment = Alignment.End
