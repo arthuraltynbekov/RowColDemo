@@ -85,7 +85,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
                 "9",
                 Modifier.align(Alignment.Top)
             )
-            TextCell("10")
+            TextCell("10", Modifier.align(Alignment.CenterVertically))
             TextCell("11")
         }
     }
