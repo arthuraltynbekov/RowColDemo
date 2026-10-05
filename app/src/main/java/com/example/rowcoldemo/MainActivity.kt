@@ -1,5 +1,5 @@
 package com.example.rowcoldemo
-
+import androidx.compose.ui.Alignment
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -58,7 +58,8 @@ fun MainScreen(modifier: Modifier = Modifier) {
             modifier.size(
                 width = 400.dp,
                 height = 200.dp
-            )
+            ),
+            verticalAlignment = Alignment.CenterVertically
         ) {
             Column {
                 TextCell("1")
