@@ -80,7 +80,13 @@ fun MainScreen(modifier: Modifier = Modifier) {
             }
         }
 
-        Row {
+        Column(
+            modifier.size(
+                width = 400.dp,
+                height = 300.dp
+            ),
+            verticalArrangement = Arrangement.Bottom
+        ) {
             TextCell("9")
             TextCell("10")
             TextCell("11")
