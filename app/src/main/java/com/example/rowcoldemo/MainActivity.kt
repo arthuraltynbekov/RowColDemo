@@ -54,7 +54,12 @@ fun TextCell(text: String, modifier: Modifier = Modifier) {
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
     Column(modifier) {
-        Row {
+        Row(
+            modifier.size(
+                width = 400.dp,
+                height = 200.dp
+            )
+        ) {
             Column {
                 TextCell("1")
                 TextCell("2")
